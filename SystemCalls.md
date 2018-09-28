@@ -31,7 +31,7 @@ This would send a signal called SIGTERM to the process. Once the process receive
 for example kill -9 2562
 kill -9 Meaning: The process will be killed by the kernel; this signal cannot be ignored.
 
-###mmap
+### mmap
 
 mmap, munmap - map or unmap files or devices into memory
 
@@ -42,13 +42,13 @@ mmap() creates a new mapping in the virtual address space of the calling process
 3. PROT_WRITE Pages may be written.
 4. PROT_NONE  Pages may not be accessed.
 
-###chmod
+### chmod
 
 chmod - changes file modes.
 
 chmod changes the file mode bits of each given file according to mode.
 
-###waitpid
+### waitpid
 
 waitpid — wait for a child process to terminate
 
@@ -56,7 +56,7 @@ The waitpid() functions shall obtain status information pertaining to one of the
 
 The waitpid() function shall be equivalent to wait() if the pid argument is (pid_t)−1 and the options argument is 0. The pid argument specifies a set of child processes for which status is requested.
 
-###SYSTEM CALL FAILS:
+### SYSTEM CALL FAILS:
 
 - fork: will fail to allocate the kernel structures if there's not enough memory
 - exec:   an Input/Output error appears
